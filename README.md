@@ -8,6 +8,6 @@
 <h3 align="center">Features</h3>
 
 <div align="center">
-  <p>⚡Mentioned Big-O time and space complexity<br />
+  <p>⚡Mentioned Big-O of time and space complexity<br />
   ⚡Comments describing approches<br />.</p>
 </div>
