@@ -1,20 +1,20 @@
-// find if the subsequence isa  valid sequence 
+// find if the subsequence is a  valid sequence
 
-sequence = [11, 1, 22, 3, 9, 8, 5, 6]
-subSequence = [1, 8, 9]
+sequence = [11, 1, 22, 3, 9, 8, 5, 6];
+subSequence = [1, 8, 6];
 
-p1 = 0
-p2 = 0
+console.log(isValidSubsequence(sequence, subSequence));
 
 // time complexity O(n) | space complexity O(1)
 function isValidSubsequence(seq, subSeq) {
-    while (p2 < seq.length) {
-        subSeq[p1] !== seq[p2] ? p2++ : p1++ && p2++
-        if (p1 === subSeq.length) return true
-    }
-    return false
+  subSequencePointer = 0;
+  sequencePointer = 0;
+
+  while (sequencePointer < seq.length) {
+    seq[sequencePointer] !== subSeq[subSequencePointer]
+      ? sequencePointer++
+      : subSequencePointer++ && sequencePointer++;
+    if (subSequencePointer === subSeq.length) return true;
+  }
+  return false;
 }
-
-console.log(isValidSubsequence(sequence, subSequence))
-
-

@@ -1,6 +1,11 @@
 // given an array of normalized numbers and a target sum
 // return the pair of numbers that sum upto the target sum
 
+numbers = [1, 2, 5, 9, 6, 7];
+targetNumber = 10;
+
+console.log(findTwoNumbers(numbers, targetNumber));
+
 // time complexity O(nLog(n)), space complexity O(1) // solved with two pointer technique
 function findTwoNumbers(nums, targetSum) {
   nums.sort();
@@ -16,11 +21,5 @@ function findTwoNumbers(nums, targetSum) {
       rightPointer -= 1;
     }
   }
-
   return [];
 }
-
-numbers = [1, 2, 5, 9, 6, 7];
-targetNumber = 10;
-
-console.log(findTwoNumbers(numbers, targetNumber));
